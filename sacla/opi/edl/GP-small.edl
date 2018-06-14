@@ -1,0 +1,3927 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1538
+y 548
+w 380
+h 600
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 16
+ctlFgColor2 index 0
+ctlBgColor1 index 10
+ctlBgColor2 index 14
+topShadowColor index 1
+botShadowColor index 11
+title "GP"
+showGrid
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 0
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP1"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 10
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP1:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 30
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP2"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 40
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP2:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 60
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP3"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 70
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP3:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 90
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP4"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 100
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP4:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 120
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP5"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 130
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP5:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 150
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP6"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 160
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP6:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 180
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP7"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 190
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP7:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 210
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP8"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 220
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP8:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 240
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP9"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 250
+w 28
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP9:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 270
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP10"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 280
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP10:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 300
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP11"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 310
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP11:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 330
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP12"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 340
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP12:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 360
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP13"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 370
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP13:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 390
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP14"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 400
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP14:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 420
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP15"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 430
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP15:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 450
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP16"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 460
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP16:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 480
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP17"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 490
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP17:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 510
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP18"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 520
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP18:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 540
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP19"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 550
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP19:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 45
+y 570
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP20"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 5
+y 580
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP20:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 0
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP21"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 10
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP21:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 0
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP41"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 10
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP41:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 0
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP61"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 10
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP61:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 0
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP81"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 10
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP81:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 30
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP22"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 40
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP22:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 60
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP23"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 70
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP23:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 90
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP24"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 100
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP24:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 120
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP25"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 130
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP25:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 150
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP26"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 160
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP26:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 180
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP27"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 190
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP27:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 210
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP28"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 220
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP28:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 240
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP29"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 250
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP29:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 270
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP30"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 280
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP30:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 300
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP31"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 310
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP31:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 330
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP32"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 340
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP32:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 360
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP33"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 370
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP33:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 390
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP34"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 400
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP34:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 420
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP35"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 430
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP35:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 450
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP36"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 460
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP36:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 480
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP37"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 490
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP37:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 510
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP38"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 520
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP38:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 540
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP39"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 550
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP39:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 120
+y 570
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP40"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 80
+y 580
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP40:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 30
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP42"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 40
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP42:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 60
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP43"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 70
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP43:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 90
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP44"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 100
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP44:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 120
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP45"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 130
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP45:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 150
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP46"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 160
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP46:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 180
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP47"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 190
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP47:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 210
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP48"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 220
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP48:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 240
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP49"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 250
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP49:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 270
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP50"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 280
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP50:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 300
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP51"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 310
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP51:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 330
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP52"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 340
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP52:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 360
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP53"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 370
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP53:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 390
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP54"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 400
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP54:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 420
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP55"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 430
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP55:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 450
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP56"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 460
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP56:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 480
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP57"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 490
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP57:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 510
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP58"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 520
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP58:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 540
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP59"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 550
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP59:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 195
+y 570
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP60"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 155
+y 580
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP60:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 30
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP62"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 40
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP62:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 60
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP63"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 70
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP63:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 90
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP64"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 100
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP64:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 120
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP65"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 130
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP65:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 150
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP66"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 160
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP66:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 180
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP67"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 190
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP67:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 210
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP68"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 220
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP68:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 240
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP69"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 250
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP69:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 270
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP70"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 280
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP70:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 300
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP71"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 310
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP71:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 330
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP72"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 340
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP72:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 360
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP73"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 370
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP73:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 390
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP74"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 400
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP74:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 420
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP75"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 430
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP75:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 450
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP76"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 460
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP76:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 480
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP77"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 490
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP77:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 510
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP78"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 520
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP78:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 540
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP79"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 550
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP79:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 270
+y 570
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP80"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 580
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP80:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 30
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP82"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 40
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP82:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 60
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP83"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 70
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP83:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 90
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP84"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 100
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP84:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 120
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP85"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 130
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP85:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 150
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP86"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 160
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP86:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 180
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP87"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 190
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP87:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 210
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP88"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 220
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP88:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 240
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP89"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 250
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP89:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 270
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP90"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 280
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP90:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 300
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP91"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 310
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP91:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 330
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP92"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 340
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP92:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 360
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP93"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 370
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP93:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 390
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP94"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 400
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP94:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 420
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP95"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 430
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP95:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 450
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP96"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 460
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP96:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 480
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP97"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 490
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP97:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 510
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP98"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 520
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP98:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 540
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP99"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 305
+y 550
+w 35
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP99:"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 345
+y 570
+w 25
+h 25
+controlPv "ME14E-MO-IOC-01:GP100"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+lineWidth 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 295
+y 580
+w 42
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "GP100:"
+}
+autoSize
+endObjectProperties
+

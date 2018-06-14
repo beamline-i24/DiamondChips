@@ -1,0 +1,103 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1966
+y 1033
+w 250
+h 150
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 9
+bgColor index 7
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 9
+botShadowColor index 9
+title "Mapping Lite"
+gridSize 5
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2044
+y 447
+w 8
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2002
+y 449
+w 16
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "H"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 1250
+y 477
+w 2
+h 0
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 12
+y 25
+w 213
+h 92
+font "helvetica-bold-r-72.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "30 Hz"
+}
+autoSize
+endObjectProperties
+

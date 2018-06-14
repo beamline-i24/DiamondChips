@@ -1,0 +1,22 @@
+2018-01-24 21:35:56,107 INFO:   	main 
+
+['sacla3_Chip_Manager_v7-ADE.py', 'write_parameter_file']
+2018-01-24 21:35:56,107 INFO:   	write_parameter_file Writing Parameter File 
+/localhome/local/Documents/sacla/parameter_files/parameters.txt
+2018-01-24 21:35:56,267 INFO:   	write_parameter_file chip_name: pierre10
+2018-01-24 21:35:56,267 INFO:   	write_parameter_file protein_name: ADE
+2018-01-24 21:35:56,267 INFO:   	write_parameter_file n_exposures: 1
+2018-01-24 21:35:56,267 INFO:   	write_parameter_file chip_type: 6
+2018-01-24 21:35:56,267 INFO:   	write_parameter_file map_type: 0
+2018-01-24 21:35:56,268 INFO:   	run Run Startup
+2018-01-24 21:35:56,268 INFO:   	run
+2018-01-24 21:35:56,269 INFO:   	check_files File Already Exists
+ -->/localhome/local/Documents/sacla/chips/ADE/20180124_213556__pierre10.addr
+2018-01-24 21:35:56,269 INFO:   	check_files File Already Exists
+ -->/localhome/local/Documents/sacla/chips/ADE/20180124_213556__pierre10.shot
+2018-01-24 21:35:56,269 INFO:   	run Checked Files
+2018-01-24 21:35:56,269 INFO:   	run Written Headers
+2018-01-24 21:35:56,270 INFO:   	run Writing to Files has been disabled. Headers Only
+2018-01-24 21:35:56,270 INFO:   	check_files File Already Exists
+ -->/localhome/local/Documents/sacla/chips/ADE/20180124_213556__pierre10rando.spec
+2018-01-24 21:35:56,271 INFO:   	run Done

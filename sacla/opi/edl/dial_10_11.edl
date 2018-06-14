@@ -1,0 +1,52 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 342
+y 69
+w 500
+h 260
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Meter)
+object activeMeterClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 0
+y 0
+w 500
+h 300
+caseColor index 0
+scaleColor index 14
+labelColor index 14
+fgColor index 25
+bgColor index 8
+topShadowColor index 0
+botShadowColor index 14
+readPv "ME14E-MO-IOC-01:GP10"
+scaleFormat "FFloat"
+scalePrecision "1"
+useDisplayBg
+complexNeedle
+3d
+scaleMin "0"
+scaleMax "22520"
+labelFontTag "arial-medium-r-18.0"
+scaleFontTag "arial-medium-r-18.0"
+endObjectProperties
+

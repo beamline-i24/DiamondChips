@@ -1,0 +1,825 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 439
+y 81
+w 660
+h 800
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 452
+y 610
+w 131
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PMAC Readback"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 435
+y 641
+w 167
+h 21
+controlPv "ME14E-MO-CHIP-01:SEND_STRING.AINP"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 14
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 227
+y 4
+w 217
+h 27
+font "arial-medium-r-24.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip Data Collector"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 52
+y 640
+w 140
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_zero.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 81
+y 646
+w 86
+h 36
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Move Chip "
+  "to zero"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 54
+y 570
+w 140
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/I24goto.py load"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 64
+y 577
+w 121
+h 36
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Make chip / I24 "
+  "ready for load"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 210
+y 570
+w 157
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/I24goto.py YAG"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 225
+y 586
+w 133
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Start check beam"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 17
+y 528
+w 172
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Predefined Positions"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 435
+y 667
+w 167
+h 20
+fgColor index 14
+bgColor index 6
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "DiamondChip-pmac.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 211
+y 642
+w 157
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/I24goto.py chip"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 226
+y 658
+w 128
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "End check beam"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 17
+y 223
+w 139
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Detector distance:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 19
+y 187
+w 113
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Exposure time:"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 131
+y 402
+w 120
+h 18
+controlPv "BL24I-EA-DET-01:Z.RBV"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+precision 2
+nullColor index 0
+useHexPrefix
+showUnits
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 92
+w 86
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip name:"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 364
+y 397
+w 186
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/I24goto.py"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 379
+y 413
+w 152
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Start data collection"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 45
+y 403
+w 78
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Detector z"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 413
+y 189
+w 150
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/setdcparameters.py"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 432
+y 205
+w 120
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Set Parameters"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 412
+y 248
+w 225
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "default is to read address file"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 32
+y 360
+w 95
+h 21
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Readbacks"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 45
+y 432
+w 73
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Exp hutch"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 127
+y 431
+w 86
+h 18
+controlPv "BL24I-PS-SHTR-01:STA"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+precision 2
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 411
+y 107
+w 70
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "echo $(LOC/\\chipPV)"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 430
+y 123
+w 32
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Test"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 59
+w 64
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Filepath:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 124
+w 106
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip capacity:"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 20
+y 156
+w 114
+h 18
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Block capacity:"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 222
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:detDistance"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 187
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:expTime"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 154
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:blockCapacity"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 123
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:chipCapacity"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 90
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:chipName"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 166
+y 58
+w 228
+h 20
+controlPv "ME14E-MO-CHIP-01:filePath"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+

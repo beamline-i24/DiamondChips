@@ -1,0 +1,8 @@
+visit 		/dls/i24/data/2018/nt14493-106/
+chip_name 	autechre
+protein_name 	futa/autechrefull
+n_exposures 	1
+chip_type 	1
+map_type 	1
+exptime 	0.025
+dcdetdist 	310

@@ -1,0 +1,6 @@
+chipname 	abing4
+visit_id 	/localhome/local/Documents/sacla
+proteinname 	wednesday
+n_exposures 	1
+chip_type 	1
+map_type 	1

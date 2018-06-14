@@ -1,0 +1,63 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 280
+y 106
+w 1359
+h 1026
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 19
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 600
+y 100
+w 400
+h 400
+lineColor index 14
+lineAlarm
+fill
+fillColor index 21
+alarmPv "ME14E-MO-CHIP-01:signal:P2402"
+visPv "ME14E-MO-CHIP-01:signal:P2402"
+visMin "20000"
+visMax "50000"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 100
+y 100
+w 400
+h 400
+lineColor index 14
+lineAlarm
+fill
+fillColor index 38
+alarmPv "ME14E-MO-CHIP-01:signal:P2402"
+visPv "ME14E-MO-CHIP-01:signal:P2402"
+visMin "18000"
+visMax "50000"
+endObjectProperties
+

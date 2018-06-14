@@ -1,0 +1,3595 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1018
+y 51
+w 900
+h 900
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 5
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+title "SACLA3 CONTROL CENTRE"
+snapToGrid
+gridSize 5
+endScreenProperties
+
+# (X-Y Graph)
+object xyGraphClass
+beginObjectProperties
+major 4
+minor 8
+release 0
+# Geometry
+x 570
+y 5
+w 325
+h 360
+# Appearance
+fgColor index 6
+bgColor index 13
+gridColor index 1
+font "helvetica-medium-r-8.0"
+# Operating Modes
+plotMode "plotLastNPts"
+nPts 0
+# X axis properties
+showXAxis
+xAxisSrc "fromUser"
+xMin -2
+xMax 27
+xLabelIntervals 10
+xMinorsPerMajor 2
+xShowLabelGrid
+xShowMajorGrid
+xUserSpecScaleDiv 1
+# Y axis properties
+showYAxis
+yAxisSrc "fromUser"
+yMin -2
+yMax 27
+yLabelIntervals 10
+yMinorsPerMajor 2
+yShowLabelGrid
+yShowMajorGrid
+yUserSpecScaleDiv 1
+# Y2 axis properties
+y2AxisSrc "AutoScale"
+y2Max 1
+# Trace Properties
+numTraces 2
+xPv {
+  0 "ME14E-MO-CHIP-01:X.RBV"
+  1 "ME14E-MO-CHIP-01:X.VAL"
+}
+yPv {
+  0 "ME14E-MO-CHIP-01:Y.RBV"
+  1 "ME14E-MO-CHIP-01:Y.VAL"
+}
+lineThickness {
+  0 7
+  1 7
+}
+plotUpdateMode {
+  0 "xOrY"
+  1 "xOrY"
+}
+plotSymbolType {
+  0 "circle"
+  1 "diamond"
+}
+opMode {
+  0 "plot"
+  1 "plot"
+}
+plotColor {
+  0 index 30
+  1 index 38
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2044
+y 447
+w 8
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "I"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 2002
+y 449
+w 16
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "H"
+}
+autoSize
+endObjectProperties
+
+# (Text w. Reg. Exp.)
+object activeXRegTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 1250
+y 477
+w 2
+h 0
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 5
+y 210
+w 165
+h 50
+fgColor index 12
+bgColor index 55
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Move To Origin"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto zero"
+}
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 280
+y 1005
+w 38
+h 24
+fgColor index 14
+bgColor index 6
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+buttonLabel "GP"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "GP-small.edl"
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 665
+y 325
+w 0
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 1
+xPoints {
+  0 665
+}
+yPoints {
+  0 325
+}
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 160
+w 342
+h 50
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 6
+y 172
+w 50
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Focus"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 235
+y 167
+w 40
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:400"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 163
+y 167
+w 40
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:-400"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 173
+y 173
+w 18
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 238
+y 173
+w 33
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OUT"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 283
+y 167
+w 65
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:1200"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 89
+y 167
+w 65
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:-1200"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 100
+y 173
+w 42
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IN x 3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 287
+y 173
+w 57
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OUT x 3"
+}
+autoSize
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 230
+y 172
+w 0
+h 0
+lineColor index 14
+fillColor index 0
+numPoints 1
+xPoints {
+  0 230
+}
+yPoints {
+  0 172
+}
+endObjectProperties
+
+# (Lines)
+object activeLineClass
+beginObjectProperties
+major 4
+minor 0
+release 1
+x 219
+y 160
+w 0
+h 50
+lineColor index 14
+fillColor index 0
+numPoints 3
+xPoints {
+  0 219
+  1 219
+  2 219
+}
+yPoints {
+  0 160
+  1 210
+  2 210
+}
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 5
+y 265
+w 320
+h 510
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 6
+y 265
+w 320
+h 510
+lineColor index 14
+fill
+fillColor index 8
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 452
+w 50
+h 50
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 11
+y 270
+w 311
+h 31
+font "helvetica-medium-r-24.0"
+fgColor index 55
+bgColor index 12
+value {
+  " Coordinate System Setup "
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 670
+w 165
+h 60
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+buttonLabel "Make Coord. Sys."
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py cs_maker"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 730
+w 165
+h 40
+fgColor index 8
+bgColor index 55
+topShadowColor index 2
+botShadowColor index 12
+font "helvetica-medium-r-18.0"
+buttonLabel "Block Check"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_blockcheck.py"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 599
+w 165
+h 50
+fgColor index 2
+bgColor index 27
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Set Fiducial 2"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py fiducial 2"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 549
+w 165
+h 50
+fgColor index 14
+bgColor index 48
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Goto Fiducial 2"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto f2"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 356
+w 165
+h 50
+fgColor index 2
+bgColor index 27
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Set Fiducial 0"
+numCmds 1
+command {
+  0 "caput ME14E-MO-CHIP-01:PMAC_STRING \\#1hmz\\#2hmz\\#3hmz"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 305
+w 165
+h 50
+fgColor index 13
+bgColor index 48
+topShadowColor index 2
+botShadowColor index 12
+font "helvetica-medium-r-18.0"
+buttonLabel "Home Stages"
+numCmds 1
+command {
+  0 "caput ME14E-MO-CHIP-01:PMAC_STRING \\#1hmz\\#2hmz\\#3hmz"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 477
+w 165
+h 50
+fgColor index 2
+bgColor index 27
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Set Fiducial 1"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py fiducial 1"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 156
+y 427
+w 165
+h 50
+fgColor index 14
+bgColor index 48
+topShadowColor index 2
+botShadowColor index 7
+font "helvetica-medium-r-18.0"
+buttonLabel "Goto Fiducial 1"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto f1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 330
+w 50
+h 50
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 320
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 74
+y 340
+w 14
+h 31
+font "helvetica-medium-r-24.0"
+fgColor index 2
+bgColor index 0
+useDisplayBg
+value {
+  "0"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 574
+w 50
+h 50
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 624
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 77
+y 584
+w 14
+h 31
+font "helvetica-medium-r-24.0"
+fgColor index 2
+bgColor index 0
+useDisplayBg
+value {
+  "2"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 685
+w 70
+h 70
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 695
+w 50
+h 50
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 685
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 47
+y 745
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 107
+y 745
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 107
+y 685
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 330
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 452
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 614
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 695
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 695
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 57
+y 735
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 97
+y 735
+w 10
+h 10
+lineColor index 25
+fill
+fillColor index 35
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 107
+y 442
+w 10
+h 10
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 77
+y 462
+w 14
+h 31
+font "helvetica-medium-r-24.0"
+fgColor index 2
+bgColor index 0
+useDisplayBg
+value {
+  "1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 31
+y 430
+w 104
+h 23
+font "arial-medium-r-18.0"
+fgColor index 35
+bgColor index 13
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+value {
+  " F1 @ A8_tt "
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 16
+y 308
+w 138
+h 23
+font "arial-medium-r-18.0"
+fgColor index 35
+bgColor index 13
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+value {
+  " Home @ A1_aa "
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 31
+y 624
+w 109
+h 23
+font "arial-medium-r-18.0"
+fgColor index 35
+bgColor index 13
+visPv "ME14E-MO-IOC-01:GP1"
+visMin "3"
+visMax "4"
+value {
+  " F2 @ H1_ta "
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 295
+y 780
+w 630
+h 140
+
+beginGroup
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 390
+y 835
+w 87
+h 17
+controlPv "ME14E-MO-CHIP-01:X.RBV"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 325
+y 835
+w 61
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Stage X"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 390
+y 860
+w 87
+h 18
+controlPv "ME14E-MO-CHIP-01:Y.RBV"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 390
+y 890
+w 87
+h 18
+controlPv "ME14E-MO-CHIP-01:Z.RBV"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 485
+y 835
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:X.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 485
+y 860
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Y.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 485
+y 890
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Z.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 525
+y 835
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:X.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 525
+y 860
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Y.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 525
+y 890
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Z.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 575
+y 875
+w 76
+h 29
+fgColor index 3
+bgColor index 6
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+buttonLabel "PMAC"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "PMAC_Command.edl"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 295
+y 780
+w 630
+h 140
+lineColor index 5
+fillColor index 0
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 715
+y 845
+w 200
+h 21
+controlPv "ME14E-MO-CHIP-01:SEND_STRING.AINP"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 575
+y 845
+w 130
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PMAC Readback"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 325
+y 865
+w 61
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Stage Y"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 325
+y 890
+w 59
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Stage Z"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 750
+y 870
+w 144
+h 33
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py initialise"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 760
+y 875
+w 123
+h 21
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Initialise stages"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 390
+y 780
+w 125
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "System Status"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 300
+y 810
+w 85
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Back Light"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 390
+y 810
+w 87
+h 21
+controlPv "ME14E-MO-CHIP-01:FILTER.RBV"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 525
+y 810
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:FILTER.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 485
+y 810
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:FILTER.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 660
+y 875
+w 76
+h 29
+fgColor index 3
+bgColor index 6
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+buttonLabel "GP PV"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/data/ME14E-GeneralPurpose.edl"
+}
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 715
+y 815
+w 75
+h 21
+controlPv "ME14E-MO-CHIP-01:signal:P2402"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 640
+y 815
+w 69
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Counter"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 805
+y 800
+w 111
+h 26
+font "arial-bold-r-20.0"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "RUNNING"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 805
+y 795
+w 110
+h 35
+lineColor index 3
+fill
+fillColor index 3
+visPv "ME14E-MO-CHIP-01:signal:P2401"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 715
+y 790
+w 75
+h 21
+controlPv "ME14E-MO-IOC-01:GP10"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 10
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 620
+y 790
+w 89
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Requested"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 320
+y 5
+w 58
+h 23
+font "helvetica-medium-r-18.0"
+fgColor index 1
+bgColor index 9
+value {
+  " Block "
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 360
+y 370
+w 535
+h 405
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 360
+y 370
+w 535
+h 405
+lineColor index 14
+fill
+fillColor index 7
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 375
+y 385
+w 505
+h 371
+
+beginGroup
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 705
+y 420
+w 175
+h 135
+lineColor index 14
+fill
+fillColor index 38
+visPv "ME14E-MO-IOC-01:GP2"
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 745
+y 475
+w 95
+h 50
+fgColor index 2
+bgColor index 20
+topShadowColor index 2
+botShadowColor index 12
+font "helvetica-medium-r-18.0"
+buttonLabel "Oxford"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "sacla3_MappingLite-oxford_v7.edl"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 520
+y 705
+w 135
+h 50
+fgColor index 14
+bgColor index 17
+topShadowColor index 1
+botShadowColor index 14
+font "helvetica-bold-r-18.0"
+buttonLabel "Start"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Collect_v7.py"
+}
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 460
+y 435
+w 170
+h 25
+controlPv "ME14E-MO-CHIP-01:filePath"
+font "helvetica-medium-r-18.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 460
+y 465
+w 170
+h 25
+controlPv "ME14E-MO-CHIP-01:chipName"
+font "helvetica-medium-r-18.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 570
+y 495
+w 60
+h 25
+controlPv "ME14E-MO-IOC-01:GP3"
+font "helvetica-medium-r-18.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+file
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 375
+y 440
+w 56
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Protein"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 400
+y 710
+w 100
+h 46
+font "helvetica-bold-r-18.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Data "
+  "Collection"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 375
+y 470
+w 37
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 375
+y 500
+w 173
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "N. Shots Per Aperture"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 385
+w 309
+h 23
+font "arial-bold-r-18.0"
+fgColor index 58
+bgColor index 0
+useDisplayBg
+value {
+  "Chip and Data Collection Setup"
+}
+autoSize
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 585
+w 165
+h 28
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 8
+controlPv "ME14E-MO-IOC-01:GP1"
+font "arial-medium-r-18.0"
+numItems 4
+symbolTag {
+  0 "-"
+  1 "Oxford"
+  2 "-"
+  3 "Oxford Inner"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 375
+y 590
+w 80
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip Type"
+}
+autoSize
+endObjectProperties
+
+# (Menu Mux)
+object menuMuxClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 465
+y 545
+w 165
+h 28
+fgColor index 14
+bgColor index 3
+topShadowColor index 1
+botShadowColor index 8
+controlPv "ME14E-MO-IOC-01:GP2"
+font "arial-medium-r-18.0"
+numItems 4
+symbolTag {
+  0 "-"
+  1 "Mapping Lite"
+  2 "-"
+  3 "Photocage"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 375
+y 550
+w 78
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Map Type"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 680
+y 705
+w 135
+h 50
+fgColor index 1
+bgColor index 20
+topShadowColor index 3
+botShadowColor index 14
+font "arial-bold-r-18.0"
+buttonLabel "Abort"
+numCmds 1
+command {
+  0 "caput ME14E-MO-IOC-01:GP9 1"
+}
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 420
+y 690
+w 200
+h 2
+lineColor index 58
+fill
+fillColor index 58
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 465
+y 625
+w 165
+h 50
+fgColor index 14
+bgColor index 17
+topShadowColor index 1
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py write_parameter_file"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 475
+y 630
+w 143
+h 42
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Set parameters "
+  "and create shotlist"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 705
+y 565
+w 175
+h 135
+lineColor index 14
+fill
+fillColor index 38
+visPv "ME14E-MO-IOC-01:GP2"
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 705
+y 565
+w 175
+h 135
+lineColor index 7
+fill
+fillColor index 7
+visPv "ME14E-MO-IOC-01:GP2"
+visInvert
+visMin "3"
+visMax "4"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 705
+y 420
+w 175
+h 135
+lineColor index 14
+fill
+fillColor index 9
+visPv "ME14E-MO-IOC-01:GP2"
+visInvert
+visMin "1"
+visMax "2"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 730
+y 430
+w 123
+h 23
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visMin "1"
+visMax "2"
+value {
+  "Lite launchers"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 750
+y 570
+w 86
+h 23
+font "helvetica-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+visMin "1"
+visMax "2"
+value {
+  "Photocage"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 450
+y 20
+w 116
+h 216
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 480
+y 140
+w 46
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OAV2"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 450
+y 165
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-01:CAM:Acquire"
+pressValue "Acquire"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 170
+w 39
+h 18
+font "arial-bold-r-14.0"
+fgColor index 17
+bgColor index 0
+useDisplayBg
+value {
+  "Start"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 510
+y 165
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-01:CAM:Acquire"
+pressValue "Done"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 520
+y 170
+w 35
+h 18
+font "arial-bold-r-14.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+value {
+  "Stop"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 450
+y 200
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-01:CAM:GainAuto"
+pressValue "Once"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 205
+w 36
+h 18
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "Gain"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 515
+y 205
+w 51
+h 22
+controlPv "ME14E-DI-CAM-01:CAM:AcquireTime"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 455
+y 15
+w 111
+h 96
+
+beginGroup
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 490
+y 15
+w 37
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OAV"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 455
+y 45
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-03:CAM:Acquire"
+pressValue "Acquire"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 465
+y 50
+w 39
+h 18
+font "arial-bold-r-14.0"
+fgColor index 17
+bgColor index 0
+useDisplayBg
+value {
+  "Start"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 510
+y 45
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-03:CAM:Acquire"
+pressValue "Done"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 520
+y 50
+w 35
+h 18
+font "arial-bold-r-14.0"
+fgColor index 20
+bgColor index 0
+useDisplayBg
+value {
+  "Stop"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 455
+y 80
+w 54
+h 31
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-DI-CAM-03:CAM:GainAuto"
+pressValue "Once"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 460
+y 85
+w 36
+h 18
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 0
+useDisplayBg
+value {
+  "Gain"
+}
+autoSize
+endObjectProperties
+
+# (Text Control)
+object activeXTextDspClass
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 515
+y 85
+w 51
+h 22
+controlPv "ME14E-DI-CAM-03:CAM:AcquireTime"
+font "arial-bold-r-14.0"
+fgColor index 25
+bgColor index 3
+editable
+autoHeight
+motifWidget
+limitsFromDb
+nullColor index 0
+useKp
+useHexPrefix
+newPos
+inputFocusUpdates
+objType "controls"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 290
+w 165
+h 40
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 460
+y 295
+w 40
+h 30
+fgColor index 14
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "IN"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto lightin"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 365
+y 295
+w 40
+h 30
+fgColor index 14
+bgColor index 3
+topShadowColor index 0
+botShadowColor index 14
+font "helvetica-medium-r-14.0"
+buttonLabel "OUT"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto lightout"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 410
+y 300
+w 47
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Light"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 350
+y 290
+w 15
+h 40
+lineColor index 14
+fill
+fillColor index 61
+visPv "ME14E-MO-CHIP-01:FILTER.RBV"
+visMin "-25"
+visMax "-19"
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 500
+y 290
+w 15
+h 40
+lineColor index 14
+fill
+fillColor index 61
+visPv "ME14E-MO-CHIP-01:FILTER.RBV"
+visMin "20"
+visMax "30"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 150
+y 35
+w 125
+h 125
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 250
+y 60
+w 25
+h 76
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-3750"
+releaseValue "#1P"
+offLabel "+3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 227
+y 85
+w 25
+h 25
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-1250"
+releaseValue "#1P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 150
+y 60
+w 25
+h 76
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:3750"
+releaseValue "#1P"
+offLabel "-3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 175
+y 85
+w 25
+h 25
+fgColor index 14
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:1250"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 175
+y 35
+w 76
+h 25
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:3750"
+releaseValue "#2P"
+offLabel "-3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 201
+y 60
+w 25
+h 25
+fgColor index 14
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:1250"
+releaseValue "#2P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 175
+y 135
+w 76
+h 25
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-3750"
+releaseValue "#2P"
+offLabel "+3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 201
+y 111
+w 25
+h 25
+fgColor index 2
+onColor index 17
+offColor index 22
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-1250"
+releaseValue "#2P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 295
+y 37
+w 120
+h 120
+
+beginGroup
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 333
+y 117
+w 40
+h 40
+fgColor index 2
+onColor index 19
+offColor index 24
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-31750"
+releaseValue "#2P"
+onLabel "Y+Y"
+offLabel "+Y+"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 373
+y 77
+w 40
+h 40
+fgColor index 2
+onColor index 19
+offColor index 24
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-31750"
+releaseValue "#1P"
+onLabel "X+X"
+offLabel "+X+"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 293
+y 77
+w 40
+h 40
+fgColor index 2
+onColor index 19
+offColor index 24
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:31750"
+releaseValue "#1P"
+onLabel "X-X"
+offLabel "-X-"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 333
+y 37
+w 40
+h 40
+fgColor index 2
+onColor index 19
+offColor index 24
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:31750"
+releaseValue "#2P"
+onLabel "Y-Y"
+offLabel "-Y-"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 55
+y 60
+w 25
+h 25
+fgColor index 14
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:15"
+releaseValue "#2P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 105
+y 60
+w 25
+h 76
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-60"
+releaseValue "#1P"
+offLabel "+3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 80
+y 85
+w 25
+h 25
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-15"
+releaseValue "#1P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 5
+y 60
+w 25
+h 76
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:60"
+releaseValue "#1P"
+offLabel "-3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 85
+w 25
+h 25
+fgColor index 14
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:15"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 35
+w 76
+h 25
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:60"
+releaseValue "#2P"
+offLabel "-3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 30
+y 135
+w 76
+h 25
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-60"
+releaseValue "#2P"
+offLabel "+3"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 56
+y 111
+w 25
+h 25
+fgColor index 2
+onColor index 16
+offColor index 21
+topShadowColor index 7
+botShadowColor index 7
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-15"
+releaseValue "#2P"
+3d
+font "helvetica-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 180
+y 5
+w 85
+h 23
+font "helvetica-medium-r-18.0"
+fgColor index 1
+bgColor index 9
+value {
+  " Window  "
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 35
+y 5
+w 66
+h 23
+font "helvetica-medium-r-18.0"
+fgColor index 1
+bgColor index 9
+value {
+  " Nudge "
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 110
+y 825
+w 85
+h 55
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto collect_position"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 205
+y 825
+w 85
+h 55
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto yag"
+}
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 15
+y 825
+w 85
+h 55
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto load_position"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 220
+y 831
+w 52
+h 42
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Check "
+  "beam"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 25
+y 831
+w 61
+h 42
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Load"
+  "position"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 831
+w 61
+h 42
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Collect"
+  "position"
+}
+autoSize
+endObjectProperties
+
+# (Group)
+object activeGroupClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 335
+y 245
+w 240
+h 35
+
+beginGroup
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 525
+y 245
+w 50
+h 35
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto flipperout"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 535
+y 250
+w 30
+h 21
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Out"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 470
+y 245
+w 50
+h 35
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/sacla3_Chip_Manager_v7.py moveto flipperin"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 485
+y 250
+w 17
+h 21
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "In"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 335
+y 250
+w 111
+h 21
+font "arial-medium-r-16.0"
+fontAlign "center"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Mirror Flipper"
+}
+autoSize
+endObjectProperties
+
+endGroup
+
+endObjectProperties
+

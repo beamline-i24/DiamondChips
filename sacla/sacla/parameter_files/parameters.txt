@@ -1,0 +1,6 @@
+chip_name 	harisa
+protein_name 	tvnir
+n_exposures 	1
+n_pump_exposures 	0
+chip_type 	1
+map_type 	0

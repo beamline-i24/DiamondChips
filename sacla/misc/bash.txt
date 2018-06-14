@@ -1,0 +1,20 @@
+PS1="\e[0;33m \w/ \e[m"
+
+alias qlap='ls -lap | grep /'
+alias mroe='more'
+alias del='mv --target-directory=/home/voe31998/.Trash'
+
+#clean EVERYTHING after a feff run
+alias cleanfeff='del *dat *.bin mod* ldos*'
+
+# Example: nls "*.mccd" <- do not forget the *
+# this would find files that do NOT match *.mccd
+alias nls='find . -not -name'
+
+alias 422ssh='ssh sherrell@128.3.220.38'
+alias 422X='ssh -X sherrell@128.3.220.38'
+alias 422ftp='sftp sherrell@128.3.220.38'
+
+alias sw='cd /dls_sw/i24/scripts/darren/'
+alias cm4982='cd /dls/i24/data/2014/cm4982-3/darren/'
+alias home='cd /home/voe31998'

@@ -1,0 +1,2379 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 1258
+y 69
+w 660
+h 800
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 3
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 431
+y 703
+w 130
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "PMAC Readback"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 414
+y 734
+w 167
+h 21
+controlPv "ME14E-MO-CHIP-01:SEND_STRING.AINP"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 14
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 251
+y 4
+w 184
+h 31
+font "arial-medium-r-24.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Chip Alignment"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 520
+y 75
+w 50
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Focus"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 372
+y 48
+w 42
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Block"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 206
+y 48
+w 62
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Window"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 54
+y 707
+w 87
+h 23
+controlPv "ME14E-MO-CHIP-01:X.RBV"
+font "arial-medium-r-18.0"
+fgColor index 25
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 52
+y 682
+w 92
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Readbacks"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 33
+y 707
+w 13
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "X"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 34
+y 733
+w 13
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Y"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 56
+y 733
+w 87
+h 23
+controlPv "ME14E-MO-CHIP-01:Y.RBV"
+font "arial-medium-r-18.0"
+fgColor index 25
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 34
+y 759
+w 11
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Z"
+}
+autoSize
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 55
+y 759
+w 87
+h 23
+controlPv "ME14E-MO-CHIP-01:Z.RBV"
+font "arial-medium-r-18.0"
+fgColor index 25
+bgColor index 5
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 267
+y 114
+w 23
+h 65
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-3750"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 400
+y 119
+w 40
+h 50
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-22000"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 242
+y 134
+w 21
+h 24
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-1250"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 344
+y 119
+w 40
+h 50
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:22000"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 187
+y 114
+w 23
+h 65
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:3750"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 214
+y 134
+w 21
+h 24
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:1250"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 367
+y 80
+w 50
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:25000"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 210
+y 83
+w 55
+h 23
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:3750"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 220
+y 112
+w 35
+h 20
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:1250"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 364
+y 172
+w 50
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-25000"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 208
+y 185
+w 58
+h 23
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-3750"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 220
+y 162
+w 35
+h 20
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-1250"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 353
+y 132
+w 19
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-X"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 377
+y 178
+w 19
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-Y"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 406
+y 133
+w 24
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+X"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 381
+y 85
+w 24
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+Y"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 565
+y 109
+w 40
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:500"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 494
+y 109
+w 40
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:-500"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 504
+y 116
+w 18
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IN"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 568
+y 115
+w 33
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OUT"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 43
+y 277
+w 25
+h 25
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 277
+w 8
+h 8
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 43
+y 462
+w 25
+h 26
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 60
+y 481
+w 8
+h 7
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 68
+y 238
+w 224
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Co-ordinate System Setup"
+}
+autoSize
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 45
+y 347
+w 25
+h 26
+lineColor index 14
+fill
+fillColor index 10
+endObjectProperties
+
+# (Rectangle)
+object activeRectangleClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 45
+y 347
+w 8
+h 7
+lineColor index 14
+fill
+fillColor index 20
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 21
+y 277
+w 16
+h 26
+font "arial-medium-r-20.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 21
+y 349
+w 12
+h 26
+font "arial-medium-r-20.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "2"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 21
+y 462
+w 12
+h 26
+font "arial-medium-r-20.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "3"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 227
+y 586
+w 107
+h 70
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/Chip.py make_cs"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 237
+y 590
+w 90
+h 63
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "   Make "
+  "co-ordinate "
+  "  system"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 161
+y 682
+w 49
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Limit"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 167
+y 707
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:X.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 167
+y 734
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Y.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 167
+y 761
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Z.LLS"
+lineColor index 14
+onColor index 35
+offColor index 39
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 226
+y 83
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 226
+y 186
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 135
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 189
+y 135
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 216
+y 137
+w 11
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 243
+y 137
+w 15
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 231
+y 164
+w 11
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 228
+y 112
+w 15
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 270
+y 135
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 226
+y 186
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 226
+y 83
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 222
+y 682
+w 62
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Homed"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 62
+y 48
+w 51
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Nudge"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 117
+y 115
+w 23
+h 65
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-60"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 92
+y 135
+w 21
+h 24
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:-15"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 37
+y 115
+w 23
+h 65
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:60"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 64
+y 135
+w 21
+h 24
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#1J:15"
+releaseValue "#1P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 60
+y 84
+w 55
+h 23
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:60"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 113
+w 35
+h 20
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:15"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 58
+y 186
+w 58
+h 23
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-60"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 70
+y 163
+w 35
+h 20
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#2J:-15"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 84
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 187
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 136
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 39
+y 136
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 66
+y 138
+w 11
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 93
+y 138
+w 15
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 81
+y 165
+w 11
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 78
+y 113
+w 15
+h 15
+font "arial-medium-r-12.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 120
+y 136
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 187
+w 13
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "-3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 84
+w 17
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "+3"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 708
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:X.MSTA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 735
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Y.MSTA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 235
+y 762
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Z.MSTA"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 22
+y 579
+w 12
+h 26
+font "arial-medium-r-20.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "4"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 273
+w 114
+h 36
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Centre on A1_aa"
+  "top right window"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 345
+w 109
+h 36
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Centre on A9_al"
+  "top left window"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 403
+w 125
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Fine-tune position"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 459
+w 140
+h 36
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Centre on I1_la"
+  "bottom right window"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 276
+w 121
+h 32
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/zerostages.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 237
+y 280
+w 97
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Set as origin"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 393
+w 176
+h 32
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/Chip.py fiducial_1"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 231
+y 398
+w 164
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Now set as fiducial_1"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 76
+y 514
+w 125
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Fine-tune position"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 506
+w 176
+h 32
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "python /dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/Chip.py fiducial_2"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 230
+y 511
+w 164
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Now set as fiducial_2"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 462
+w 125
+h 32
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_I1_ll.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 247
+y 467
+w 80
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Go to I1_ll"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 482
+y 346
+w 125
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_zero.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 503
+y 361
+w 79
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Go to Zero"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 481
+y 285
+w 125
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_load.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 501
+y 300
+w 84
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Go to Load"
+}
+autoSize
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 553
+y 154
+w 65
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:1500"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Message Button)
+object activeMessageButtonClass
+beginObjectProperties
+major 4
+minor 1
+release 0
+x 482
+y 154
+w 65
+h 35
+fgColor index 14
+onColor index 3
+offColor index 3
+topShadowColor index 1
+botShadowColor index 14
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+pressValue "#3J:-1500"
+releaseValue "#2P"
+3d
+font "arial-medium-r-18.0"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 493
+y 161
+w 42
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "IN x 3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 557
+y 161
+w 57
+h 18
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "OUT x 3"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 293
+y 682
+w 64
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Moving"
+}
+autoSize
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 306
+y 708
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:X.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 306
+y 735
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Y.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Byte)
+object ByteClass
+beginObjectProperties
+major 4
+minor 0
+release 0
+x 306
+y 762
+w 30
+h 20
+controlPv "ME14E-MO-CHIP-01:Z.MOVN"
+lineColor index 14
+onColor index 15
+offColor index 19
+numBits 1
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 224
+y 348
+w 125
+h 32
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_A9_al.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 241
+y 353
+w 89
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Go to A9_al"
+}
+autoSize
+endObjectProperties
+
+# (Shell Command)
+object shellCmdClass
+beginObjectProperties
+major 4
+minor 3
+release 0
+x 482
+y 408
+w 125
+h 50
+fgColor index 14
+bgColor index 49
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numCmds 1
+command {
+  0 "/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/goto_YAG.sh"
+}
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 502
+y 423
+w 83
+h 21
+font "arial-medium-r-16.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Go to YAG"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 71
+y 583
+w 120
+h 36
+font "arial-medium-r-14.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Make co-ordinate "
+  "system"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 453
+y 239
+w 177
+h 23
+font "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 0
+useDisplayBg
+value {
+  "Predefined Positions"
+}
+autoSize
+endObjectProperties
+
+# (Related Display)
+object relatedDisplayClass
+beginObjectProperties
+major 4
+minor 4
+release 0
+x 414
+y 760
+w 167
+h 20
+fgColor index 14
+bgColor index 6
+topShadowColor index 0
+botShadowColor index 14
+font "arial-medium-r-18.0"
+numPvs 4
+numDsps 1
+displayFileName {
+  0 "DiamondChip-pmac.edl"
+}
+endObjectProperties
+

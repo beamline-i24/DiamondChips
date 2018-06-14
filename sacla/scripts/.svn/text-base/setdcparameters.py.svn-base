@@ -1,0 +1,22 @@
+import sys
+import time
+import subprocess
+
+chipname = 'Avalon'
+exptime = 0.05
+detdist=1000
+
+print '\n','chipname:', chipname
+print 'exposure time:', exptime
+print 'detector distance:', detdist
+
+
+f = open('/dls_sw/work/R3.14.12.3/ioc/ME14E/ME14E-MO-IOC-01/ME14E-MO-IOC-01App/scripts/datacollparameters.txt','w')
+line1 ="chipname \t%s\n" %(chipname)
+line2 ="exposure \t%s\n" %(exptime)
+line3 ='distance \t%s\n' %(detdist)
+
+f.write(line1)
+f.write(line2)
+f.write(line3)
+

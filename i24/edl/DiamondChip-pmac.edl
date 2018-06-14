@@ -1,0 +1,144 @@
+4 0 1
+beginScreenProperties
+major 4
+minor 0
+release 1
+x 2093
+y 98
+w 350
+h 200
+font "arial-medium-r-18.0"
+ctlFont "arial-medium-r-18.0"
+btnFont "arial-medium-r-18.0"
+fgColor index 14
+bgColor index 20
+textColor index 14
+ctlFgColor1 index 14
+ctlFgColor2 index 0
+ctlBgColor1 index 0
+ctlBgColor2 index 14
+topShadowColor index 0
+botShadowColor index 14
+endScreenProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 22
+y 139
+w 128
+h 21
+font "arial-medium-r-16.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PMAC Response"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 19
+y 102
+w 135
+h 21
+font "arial-medium-r-16.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "PMAC Command"
+}
+autoSize
+endObjectProperties
+
+# (Textentry)
+object TextentryClass
+beginObjectProperties
+major 10
+minor 0
+release 0
+x 164
+y 93
+w 166
+h 33
+controlPv "ME14E-MO-CHIP-01:PMAC_STRING"
+fgColor index 25
+fgAlarm
+bgColor index 5
+fill
+font "arial-medium-r-16.0"
+endObjectProperties
+
+# (Text Monitor)
+object activeXTextDspClass:noedit
+beginObjectProperties
+major 4
+minor 6
+release 0
+x 162
+y 139
+w 167
+h 21
+controlPv "ME14E-MO-CHIP-01:SEND_STRING.AINP"
+font "arial-medium-r-16.0"
+fgColor index 16
+bgColor index 14
+autoHeight
+limitsFromDb
+nullColor index 0
+useHexPrefix
+newPos
+objType "monitors"
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 56
+y 9
+w 232
+h 26
+font "arial-bold-r-20.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Chip PMAC Interface"
+}
+autoSize
+endObjectProperties
+
+# (Static Text)
+object activeXTextClass
+beginObjectProperties
+major 4
+minor 1
+release 1
+x 8
+y 41
+w 326
+h 42
+font "arial-medium-r-16.0"
+fgColor index 0
+bgColor index 0
+useDisplayBg
+value {
+  "Expert user only. Do not enter commands "
+  "unless you are Robin or Darren"
+}
+autoSize
+endObjectProperties
+

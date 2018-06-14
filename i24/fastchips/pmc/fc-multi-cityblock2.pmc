@@ -1,0 +1,204 @@
+;Author: 	Lee Hudson and Robin Owen	
+;Descripton:	Grid scanning program
+;Snakes through city blocks and then between city blocks
+;city blocks now two subroutines (one for going up and one for down)
+;UNTESTED UNTESTED
+;As of 5th Nov. Loads onto pmac with no bugs works fine for 2x2 blocks
+
+#DEFINE PROGRAM_NO 4
+
+#DEFINE GLOBAL_ACC	P(1000 * PROGRAM_NO + 1)
+#DEFINE GLOBAL_S_CURVE	P(1000 * PROGRAM_NO + 2)
+
+#DEFINE X_VEL	P(1000 * PROGRAM_NO + 3)
+#DEFINE X_ACC	P(1000 * PROGRAM_NO + 4)
+#DEFINE X_STEPS	P(1000 * PROGRAM_NO + 5)
+#DEFINE X_COUNTER	P(1000 * PROGRAM_NO + 6)
+#DEFINE X_BLOCKCOUNTER	P(1000 * PROGRAM_NO + 7)
+#DEFINE X_STEP_SIZE	P(1000 * PROGRAM_NO + 8)
+#DEFINE X_INCREMENT	P(1000 * PROGRAM_NO + 9)
+#DEFINE X_BLOCK_SIZE P(1000 * PROGRAM_NO + 10)
+#DEFINE X_BLOCKS P(1000 * PROGRAM_NO + 11)
+
+#DEFINE Y_VEL	P(1000 * PROGRAM_NO + 12)
+#DEFINE Y_ACC	P(1000 * PROGRAM_NO + 13)
+#DEFINE Y_STEPS	P(1000 * PROGRAM_NO + 14)
+#DEFINE Y_COUNTER	P(1000 * PROGRAM_NO + 15)
+#DEFINE Y_BLOCKCOUNTER	P(1000 * PROGRAM_NO + 16)
+#DEFINE Y_STEP_SIZE	P(1000 * PROGRAM_NO + 17)
+#DEFINE Y_INCREMENT	P(1000 * PROGRAM_NO + 18)
+#DEFINE Y_BLOCK_SIZE P(1000 * PROGRAM_NO + 19)
+#DEFINE Y_BLOCKS P(1000 * PROGRAM_NO + 20)
+
+#DEFINE Z_VEL	P(1000 * PROGRAM_NO + 21)
+#DEFINE Z_ACC	P(1000 * PROGRAM_NO + 22)
+
+#DEFINE DWELL_TIME	P(1000 * PROGRAM_NO + 23)
+#DEFINE DEBUG	P(1000 * PROGRAM_NO + 24)
+
+;Home positions
+#DEFINE X_HOME	0
+#DEFINE Y_HOME	0
+#DEFINE Z_HOME	0
+
+X_VEL = 20
+Z_VEL = 20
+Y_VEL = 20
+
+
+GLOBAL_ACC = 1
+GLOBAL_S_CURVE = 0
+
+;define the pitch of the grid within a city block
+X_STEP_SIZE = 0.125
+Y_STEP_SIZE = 0.125
+X_STEPS = 12 ; number of columns
+Y_STEPS = 12 ; number of rows 
+
+;define distance between aa in adjacent city blocks
+X_BLOCK_SIZE = 2.20
+Y_BLOCK_SIZE = 2.50
+X_BLOCKS = 1
+Y_BLOCKS = 2
+
+DWELL_TIME = 100
+
+DEL GAT	; Erase any defined gather buffer
+&1	; Coordinate System 1
+; Brian said might be best to use a number other than 1. Clarify and change if rqd
+CLOSE	; Make sure all buffers are closed
+
+OPEN PROG PROGRAM_NO	; Open buffer for program entry, Program #1
+CLEAR	; Erase existing contents of buffer
+DEBUG = 1
+X_BLOCKCOUNTER = 0
+Y_BLOCKCOUNTER = 0
+X_COUNTER = 1
+Y_COUNTER = 1
+
+
+LINEAR	; Blended linear interpolation move mode
+ABS	; Absolute mode - moves specified by position
+TA(GLOBAL_ACC)	; Set 1/2 sec (500 msec) acceleration time
+TS(GLOBAL_S_CURVE)	; Set no S-curve acceleration time
+DEBUG = 2
+F(X_VEL)	
+X(X_HOME)
+DWELL0
+DEBUG = 3
+
+F(Y_VEL)	
+Y(Y_HOME)
+DWELL0
+DEBUG = 4
+
+F(Z_VEL)	
+Z(Z_HOME)
+DWELL0
+DEBUG = 5
+
+COMMAND"GAT"
+
+DEBUG = 6
+
+; This section of code moves to the starting position of a city block
+; Start at home position if not there already
+X(X_HOME) Y(Y_HOME) Z(Z_HOME)
+
+WHILE(X_BLOCKCOUNTER < X_BLOCKS)
+	WHILE(Y_BLOCKCOUNTER < Y_BLOCKS)
+		Y(Y_HOME+(Y_BLOCKCOUNTER*Y_BLOCK_SIZE))
+		;Set this position as X and Y BLOCK home
+		Q1001=X_HOME  ;Q1001 refers to X
+		Q1002=Y_HOME+(Y_BLOCKCOUNTER*Y_BLOCK_SIZE)  ;Q1002 refers to Y
+		;run down block here
+		GOSUB100
+		DWELL(DWELL_TIME)
+		Y_BLOCKCOUNTER = Y_BLOCKCOUNTER + 1
+	ENDWHILE
+	X(X_HOME+((2*X_BLOCKS-1)*X_BLOCK_SIZE))
+	WHILE(Y_BLOCKCOUNTER > 0)
+		F(X_VEL)	; Set feedrate
+		Y(Y_HOME+(Y_BLOCKCOUNTER*Y_BLOCK_SIZE)+(Y_STEPS-1)*Y_STEP_SIZE)
+		Q1001=X_HOME+((2*X_BLOCKS-1)*X_BLOCK_SIZE)  ;Q1001 refers to X
+		Q1002=Y_HOME+(Y_BLOCKCOUNTER*Y_BLOCK_SIZE)+(Y_STEPS-1)*Y_STEP_SIZE  ;Q1002 refers to Y
+		;run up block here
+		GOSUB101
+		DWELL(DWELL_TIME)
+		Y_BLOCKCOUNTER = Y_BLOCKCOUNTER - 1
+	ENDWHILE
+	X(X_HOME+(2*X_BLOCKS*X_BLOCK_SIZE))
+	X_BLOCKCOUNTER = X_BLOCKCOUNTER + 1
+ENDWHILE
+X_BLOCKCOUNTER = 1
+
+DEBUG = 8
+
+COMMAND"END GAT"
+
+F(X_VEL)	
+X(X_HOME)
+DWELL0
+
+F(Y_VEL)	
+Y(Y_HOME)
+DWELL0
+
+F(Z_VEL)	
+Z(Z_HOME)
+DWELL0
+
+RETURN
+
+N100 ; this is a city block moving from top to bottom
+	WHILE(Y_COUNTER < Y_STEPS/2+1)
+		WHILE(X_COUNTER < X_STEPS)
+			F(X_VEL)	; Set feedrate
+			X(Q1001+(X_COUNTER*X_STEP_SIZE))
+			DWELL(DWELL_TIME)
+			X_COUNTER = X_COUNTER + 1
+		ENDWHILE
+		F(Y_VEL)	; Set feedrate
+		Y(Q1002+((2*Y_COUNTER-1)*Y_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		WHILE(X_COUNTER > 0)
+			F(X_VEL)	; Set feedrate
+			X(Q1001+((X_COUNTER-1)*X_STEP_SIZE))
+			DWELL(DWELL_TIME)
+			X_COUNTER = X_COUNTER - 1
+		ENDWHILE
+		F(Y_VEL)	; Set feedrate
+		Y(Q1002+(2*Y_COUNTER*Y_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		Y_COUNTER = Y_COUNTER + 1
+	ENDWHILE
+	Y_COUNTER = 1
+RETURN	
+
+N101 ; this is a city block moving from bottom to top
+	WHILE(Y_COUNTER < Y_STEPS/2+1)
+		WHILE(X_COUNTER < X_STEPS)
+			F(X_VEL)	; Set feedrate
+			X(Q1001+(X_COUNTER*X_STEP_SIZE))
+			DWELL(DWELL_TIME)
+			X_COUNTER = X_COUNTER + 1
+		ENDWHILE
+		F(Y_VEL)	; Set feedrate
+		Y(Q1002-((2*Y_COUNTER-1)*Y_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		WHILE(X_COUNTER > 0)
+			F(X_VEL)	; Set feedrate
+			X(Q1001+((X_COUNTER-1)*X_STEP_SIZE))
+			DWELL(DWELL_TIME)
+			X_COUNTER = X_COUNTER - 1
+		ENDWHILE
+		F(Y_VEL)	; Set feedrate
+		Y(Q1002-(2*Y_COUNTER*Y_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		Y_COUNTER = Y_COUNTER + 1
+	ENDWHILE
+	Y_COUNTER = 1
+RETURN	
+
+
+CLOSE	; Close buffer - end of program

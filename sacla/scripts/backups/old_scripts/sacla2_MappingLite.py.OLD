@@ -1,0 +1,76 @@
+import pv
+import os, re, sys
+import math
+import string
+from time import sleep
+from ca import caput, caget 
+from sacla_Chip_StartUp3 import get_xy
+from sacla_Chip_StartUp3 import make_path_dict
+
+###########################################
+#            Mapping Lite                 #
+# Define blocks to shoot for SACLA 2      #
+# This version last edited 28 Sept by RLO #
+###########################################
+
+def setchipparameters():
+    path = '/localhome/local/Documents/sacla/parameter_files/'
+    print '\n\nSaving to', path
+    f = open(path + 'currentchipmap.txt','w')
+    #Currently a bit of a hack. Change to a loop. While n is less then nblocks.
+    block01 = caget(pv.me14e_gp10)
+    f.write('01Status    P3011 \t%s\n' %block01)
+    print '01Status    P3011:', block01
+    block02 = caget(pv.me14e_gp11)
+    f.write('02Status    P3021 \t%s\n' %block02)
+    print '02Status    P3021:', block02
+    block03 = caget(pv.me14e_gp12)
+    f.write('03Status    P3031 \t%s\n' %block03)
+    print '03Status    P3031:', block03
+    block04 = caget(pv.me14e_gp13)
+    f.write('04Status    P3041 \t%s\n' %block04)
+    print '04Status    P3041:', block04
+    block05 = caget(pv.me14e_gp14)
+    f.write('05Status    P3051 \t%s\n' %block05)
+    print '05Status    P3051:', block05
+    block06 = caget(pv.me14e_gp15)
+    f.write('06Status    P3061 \t%s\n' %block06)
+    print '06Status    P3061:', block06
+    block07 = caget(pv.me14e_gp7)
+    f.write('07Status    P3071 \t%s\n' %block07)
+    print '07Status    P3071:', block07
+    block08 = caget(pv.me14e_gp8)
+    f.write('08Status    P3081 \t%s\n' %block08)
+    print '08Status    P3081:', block08
+    block09 = caget(pv.me14e_gp9)
+    f.write('09Status    P3091 \t%s\n' %block09)
+    print '09Status    P3091:', block09
+    f.close()
+
+def uploadchipparameters():
+    path = '/localhome/local/Documents/sacla/parameter_files/'
+    print '\n\nSaving to', path
+    f = open(path + 'currentchipmap.txt','r')
+    for line in f:
+        cols = line.split( )
+        pvar = cols[1]
+        value = cols[2]
+        s = str(pvar) + '=' + str(value)
+        print 's', s
+        caput(pv.me14e_pmac_str, s)
+        sleep(0.02)
+    print 'done'
+
+
+
+def main(args):
+    if args[1] == 'setchipparameters':
+        setchipparameters()
+    elif args[1] == 'uploadchipparameters':
+        uploadchipparameters()
+    else:
+        print 'Unknown Command'
+    pass
+
+if  __name__ == '__main__':
+    main(sys.argv)

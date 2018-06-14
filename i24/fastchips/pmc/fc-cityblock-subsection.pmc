@@ -1,0 +1,132 @@
+;Author: 	Lee Hudson and Robin Owen	
+;Descripton:	Grid scanning program to test response of smaract
+;not a full city block for testing timings with fast camera
+#DEFINE PROGRAM_NO 5
+
+#DEFINE GLOBAL_ACC	P(1000 * PROGRAM_NO + 1)
+#DEFINE GLOBAL_S_CURVE	P(1000 * PROGRAM_NO + 2)
+
+#DEFINE X_VEL	P(1000 * PROGRAM_NO + 3)
+#DEFINE X_ACC	P(1000 * PROGRAM_NO + 4)
+#DEFINE X_STEPS	P(1000 * PROGRAM_NO + 5)
+#DEFINE X_COUNTER	P(1000 * PROGRAM_NO + 6)
+#DEFINE X_STEP_SIZE	P(1000 * PROGRAM_NO + 7)
+#DEFINE X_INCREMENT	P(1000 * PROGRAM_NO + 8)
+
+#DEFINE Y_VEL	P(1000 * PROGRAM_NO + 9)
+#DEFINE Y_ACC	P(1000 * PROGRAM_NO + 10)
+#DEFINE Y_STEPS	P(1000 * PROGRAM_NO + 11)
+#DEFINE Y_COUNTER	P(1000 * PROGRAM_NO + 12)
+#DEFINE Y_STEP_SIZE	P(1000 * PROGRAM_NO + 13)
+#DEFINE Y_INCREMENT	P(1000 * PROGRAM_NO + 14)
+
+#DEFINE Z_VEL	P(1000 * PROGRAM_NO + 15)
+#DEFINE Z_ACC	P(1000 * PROGRAM_NO + 16)
+
+#DEFINE DWELL_TIME	P(1000 * PROGRAM_NO + 17)
+#DEFINE DEBUG	P(1000 * PROGRAM_NO + 18)
+
+;Home positions
+#DEFINE X_HOME	0
+#DEFINE Y_HOME	0
+#DEFINE Z_HOME	0
+
+X_VEL = 10
+Z_VEL = 10
+Y_VEL = 10
+
+
+GLOBAL_ACC = 1
+GLOBAL_S_CURVE = 0
+
+X_STEP_SIZE = 0.125
+Y_STEP_SIZE = 0.125
+X_STEPS = 10
+Y_STEPS = 6
+DWELL_TIME = 50
+
+DEL GAT	; Erase any defined gather buffer
+&1	; Coordinate System 1
+CLOSE	; Make sure all buffers are closed
+
+
+
+OPEN PROG PROGRAM_NO	; Open buffer for program entry, Program #1
+CLEAR	; Erase existing contents of buffer
+DEBUG = 1
+X_COUNTER = 1
+Y_COUNTER = 1
+LINEAR	; Blended linear interpolation move mode
+ABS	; Absolute mode - moves specified by position
+TA(GLOBAL_ACC)	; Set 1/2 sec (500 msec) acceleration time
+TS(GLOBAL_S_CURVE)	; Set no S-curve acceleration time
+DEBUG = 2
+F(X_VEL)	
+X(X_HOME)
+DWELL0
+DEBUG = 3
+
+F(Y_VEL)	
+Y(Y_HOME)
+DWELL0
+DEBUG = 4
+
+F(Z_VEL)	
+Z(Z_HOME)
+DWELL0
+DEBUG = 5
+
+COMMAND"GAT"
+
+DEBUG = 6
+
+WHILE(Y_COUNTER < Y_STEPS)
+
+	WHILE(X_COUNTER < X_STEPS)
+		F(X_VEL)	; Set feedrate
+		X(X_HOME+(X_COUNTER*X_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		
+		X_COUNTER = X_COUNTER + 1
+	ENDWHILE
+	
+	F(Y_VEL)	; Set feedrate
+	Y(Y_HOME+((2*Y_COUNTER-1)*Y_STEP_SIZE))
+	DWELL(DWELL_TIME)
+	
+	DEBUG = 7
+		
+	WHILE(X_COUNTER > 0)
+		F(X_VEL)	; Set feedrate
+		X(X_HOME+((X_COUNTER-1)*X_STEP_SIZE))
+		DWELL(DWELL_TIME)
+		
+		X_COUNTER = X_COUNTER - 1
+	ENDWHILE
+	
+	F(Y_VEL)	; Set feedrate
+	Y(Y_HOME+(2*Y_COUNTER*Y_STEP_SIZE))
+	DWELL(DWELL_TIME)
+	
+	Y_COUNTER = Y_COUNTER + 1
+	
+ENDWHILE
+
+DEBUG = 8
+
+COMMAND"END GAT"
+
+
+F(X_VEL)	
+X(X_HOME)
+DWELL0
+
+F(Y_VEL)	
+Y(Y_HOME)
+DWELL0
+
+F(Z_VEL)	
+Z(Z_HOME)
+DWELL0
+
+CLOSE	; Close buffer - end of program

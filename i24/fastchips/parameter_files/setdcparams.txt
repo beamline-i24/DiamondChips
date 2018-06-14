@@ -1,0 +1,7 @@
+chipname 	tehran
+visit_id 	/dls/i24/data/2016/nt14493-21
+filepath 	mb
+chipcapacity 	11664
+blockcapacity 	144
+exposure 	0.05
+distance 	380

@@ -1,0 +1,7 @@
+visit 	/dls/i24/data/2016/cm14486-1
+filepath 	tmp/tuesday
+chipname 	abc1234
+chipcapacity 	11665
+blockcapacity 	145
+exposure 	0.15
+distance 	655
